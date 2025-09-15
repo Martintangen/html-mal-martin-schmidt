@@ -7,9 +7,10 @@
     <title>Forside-mal-html</title>
 </head>
 <body>
-<header>
+<!-----------Header------------->
+<header id="global-header">
   <a href="index.html" id="mainlogo">LOGO</a>
-  <nav>
+  <nav class="navi">
     <ul>
       <li><a href="index.html">Hjem</a></li>
       <li><a href="index.html">Nettside-mal</a></li>
@@ -18,21 +19,23 @@
     </ul>
   </nav>
 </header>
-
+<!---------MAIN-------------->
 <main>
     <section>
         <article>
-            <h2>Kontakt oss</h2>
+            <h3>Labøvelse</h3>
         </article>
         <article>
-             <h2>Studieplan</h2>
-        <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text. 
-            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-        </p>
+             <h3>Kontakt oss</h3>
+        </article>
+        <article>
+          <h3>
+            Mal 
+          </h3>
         </article>
     </section>
 </main>
+<!-------------aside---------------->
 <aside>
     <section>
         <h3>Linker til semantisk-html:</h3>
@@ -51,10 +54,16 @@
         </ul>
     </section>
 </aside>
-
+<!--------------------footer------------------>
 <footer>
-<h4>Navn: Martin Tangen Schmidt</h4>
-<h5>E-post: martin.t.schmidt@hiof.no</h5>
+  <ul>
+    <li>
+      Martin Tangen Schmidt
+    </li>
+    <li>
+      martin.t.schmidt@hiof.no
+    </li>
+  </ul>
 <form>
   <lable>E-post:
   <input type="email" placeholder="ola.nordman@hiof.no...."/>
