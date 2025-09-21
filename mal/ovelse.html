@@ -7,21 +7,21 @@
     <title>Webutvikling - tabell</title>
 </head>
 <body>
-<header>
-   <a href="index.html"id="mainlogo">LOGO</a>
-  <nav>
+<header id="global-header">
+  <a href="index.html" id="mainlogo">LOGO</a>
+  <nav class="navi">
     <ul>
       <li><a href="index.html">Hjem</a></li>
       <li><a href="index.html">Nettside-mal</a></li>
       <li><a href="index.html">Labøvelse</a></li>
-      <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+      <li><a href="#C4">Kontakt oss</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
     <h1>Labøvelser Webutvikling</h1>
-    <img src="https://creopark.no/wp-content/uploads/2016/02/Webutvikling.jpg.webp" alt="Bilde som viser koding">
+ 
 <table class="tabell">
 <tr>
 <th>Uke</th>
@@ -80,7 +80,33 @@
 
 
 </main>
+<footer class="footer">
+  <ul>
+    <li>
+      Martin Tangen Schmidt
+    </li>
+    <li>
+      martin.t.schmidt@hiof.no
+    </li>
+  </ul>
 
+<form action="" class="form-container">
+<label id="C4" for="navn">Navn:</label>
+<input type="text" id="navn" placeholder="Navn">
+
+<label for="email">E-post: </label>
+<input type="email" id="email" placeholder="ola.nordman@hiof.no....">
+
+<label for="emne">Emne:</label>
+<input type="text" id="emne" placeholder="Spm om HTML?">
+
+<label for="melding">Melding:</label>
+<textarea name="melding"></textarea>
+
+<input type="submit" class="btn" value="Send inn">
+</form>
+
+</footer>
 
 </body>
 

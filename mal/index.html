@@ -15,14 +15,14 @@
   
     <ul>
       <li><a href="index.html">Hjem</a></li>
-      <li><a href="index.html">Nettside-mal</a></li>
+      <li><a href="nettside-mal.html">Nettside-mal</a></li>
       <li><a href="ovelse.html">Labøvelse</a></li>
-      <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+      <li><a href="#C4">Kontakt oss</a></li>
     </ul>
   </nav>
 </header>
 <!---------MAIN-------------->
-<main>
+<main class="main">
   
     <section>
         <article>
@@ -39,9 +39,9 @@
     </section>
 </main>
 <!-------------aside---------------->
-<aside>
+<aside class="aside">
     <section>
-        <h3>Linker til semantisk-html:</h3>
+        <h3>Semantisk HTML</h3>
           <ul>
       <li><a href="https://ndla.no/nb/r/konseptutvikling-og-programmering-im-ikm-vg1/semantisk-html/0d94e80dec">Norsk digital læringsarena</a></li>
       <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">w3schools</a></li>
@@ -51,14 +51,12 @@
     </ul>
     </section>
     <section>
-      <h3>Vil du vite mer:</h3>
-        <ul>
-            <li><a href="https://www.google.com/search?q=semantisk+html&sca_esv=79c832bf811e105b&source=hp&ei=s9W-aN7qNtKp9u8Pg7qDwQY&iflsig=AOw8s4IAAAAAaL7jw_LzB17aXGXWmF5mI5twe-8WNnw5&ved=0ahUKEwiekOHCnsmPAxXSlP0HHQPdIGgQ4dUDCCA&uact=5&oq=semantisk+html&gs_lp=Egdnd3Mtd2l6Ig5zZW1hbnRpc2sgaHRtbDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMggQABiABBiiBEi1OFDdAVjENHAGeACQAQCYAZMBoAHADaoBAzguObgBA8gBAPgBAZgCF6AC0Q6oAgrCAhcQABiABBi0AhjlAhi3AxiKBRjqAhiKA8ICChAAGIAEGEMYigXCAg4QABiABBixAxiDARiKBcICCBAAGIAEGLEDwgILEC4YgAQY0QMYxwHCAg4QLhiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIUEC4YgAQYsQMY0QMYgwEYxwEYigXCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIREC4YgAQYsQMYgwEYxwEYrwHCAg0QLhiABBjRAxjHARgKwgIHEAAYgAQYCsICBBAAGB7CAgcQABiABBgNmAMM8QUJyzC0UBB43pIHBTEzLjEwoAe8Y7IHBDcuMTC4B54OwgcGMi0yMS4yyAdx&sclient=gws-wiz">Gjør et Google-søk:</a></li>
-        </ul>
+      <h4>Oversikt over SERP søk fra Google om semantisk HTML</h4>
+        <a href="https://www.google.com/search?q=semantisk+html&sca_esv=79c832bf811e105b&source=hp&ei=s9W-aN7qNtKp9u8Pg7qDwQY&iflsig=AOw8s4IAAAAAaL7jw_LzB17aXGXWmF5mI5twe-8WNnw5&ved=0ahUKEwiekOHCnsmPAxXSlP0HHQPdIGgQ4dUDCCA&uact=5&oq=semantisk+html&gs_lp=Egdnd3Mtd2l6Ig5zZW1hbnRpc2sgaHRtbDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBRAAGO8FMggQABiABBiiBEi1OFDdAVjENHAGeACQAQCYAZMBoAHADaoBAzguObgBA8gBAPgBAZgCF6AC0Q6oAgrCAhcQABiABBi0AhjlAhi3AxiKBRjqAhiKA8ICChAAGIAEGEMYigXCAg4QABiABBixAxiDARiKBcICCBAAGIAEGLEDwgILEC4YgAQY0QMYxwHCAg4QLhiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgIUEC4YgAQYsQMY0QMYgwEYxwEYigXCAg4QLhiABBixAxjRAxjHAcICBRAuGIAEwgIREC4YgAQYsQMYgwEYxwEYrwHCAg0QLhiABBjRAxjHARgKwgIHEAAYgAQYCsICBBAAGB7CAgcQABiABBgNmAMM8QUJyzC0UBB43pIHBTEzLjEwoAe8Y7IHBDcuMTC4B54OwgcGMi0yMS4yyAdx&sclient=gws-wiz" class="google-btn">HTML SERP</a>
     </section>
 </aside>
 <!--------------------footer------------------>
-<footer>
+<footer class="footer">
   <ul>
     <li>
       Martin Tangen Schmidt
@@ -67,15 +65,21 @@
       martin.t.schmidt@hiof.no
     </li>
   </ul>
-<form>
-  <lable>E-post:
-  <input type="email" placeholder="ola.nordman@hiof.no...."/>
-  </lable>
 
-  <input class="btn" type="submit" value="Meld meg på"/>
+<form action="" class="form-container">
+<label id="C4" for="navn">Navn:</label>
+<input type="text" id="navn" placeholder="Navn">
 
-  <label for="age-validation">Over 18 år?</label>
-  <input type="checkbox" id="age-validation" />
+<label for="email">E-post: </label>
+<input type="email" id="email" placeholder="ola.nordman@hiof.no....">
+
+<label for="emne">Emne:</label>
+<input type="text" id="emne" placeholder="Spm om HTML?">
+
+<label for="melding">Melding:</label>
+<textarea name="melding"></textarea>
+
+<input type="submit" class="btn" value="Send inn">
 </form>
 
 </footer>
